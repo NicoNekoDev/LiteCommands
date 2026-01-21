@@ -1,11 +1,11 @@
 plugins {
     id("java")
-    id("com.gradleup.shadow") version "9.2.2"
+    id("com.gradleup.shadow") version "9.3.1"
     id("net.minecrell.plugin-yml.bukkit") version "0.6.0"
     id("xyz.jpenilla.run-paper") version "3.0.2"
 }
 
-version = "3.10.6"
+version = "3.10.9"
 
 repositories {
     mavenCentral()
@@ -16,8 +16,8 @@ repositories {
 dependencies {
     compileOnly("org.spigotmc:spigot-api:1.20.2-R0.1-SNAPSHOT")
 
-    // implementation("dev.rollczi:litecommands-bukkit:3.10.6") // <-- uncomment in your project
-    // implementation("dev.rollczi:litecommands-folia:3.10.6") // <-- uncomment in your project
+    // implementation("dev.rollczi:litecommands-bukkit:3.10.9") // <-- uncomment in your project
+    // implementation("dev.rollczi:litecommands-folia:3.10.9") // <-- uncomment in your project
     implementation(project(":litecommands-bukkit")) // don't use this line in your build.gradle
     implementation(project(":litecommands-folia")) // don't use this line in your build.gradle
 }

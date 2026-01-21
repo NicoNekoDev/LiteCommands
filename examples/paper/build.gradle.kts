@@ -1,6 +1,6 @@
 plugins {
     id("java")
-    id("com.gradleup.shadow") version "9.2.2"
+    id("com.gradleup.shadow") version "9.3.1"
     id("net.minecrell.plugin-yml.paper") version "0.6.0"
     id("xyz.jpenilla.run-paper") version "3.0.2"
 }
@@ -14,7 +14,7 @@ repositories {
 dependencies {
     compileOnly("io.papermc.paper:paper-api:1.21.5-R0.1-SNAPSHOT")
 
-    // implementation("dev.rollczi:litecommands-bukkit:3.10.6") // <-- uncomment in your project
+    // implementation("dev.rollczi:litecommands-bukkit:3.10.9") // <-- uncomment in your project
     implementation(project(":litecommands-bukkit")) // don't use this line in your build.gradle
 }
 

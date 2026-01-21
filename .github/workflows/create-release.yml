@@ -1,0 +1,36 @@
+name: Release
+on:
+  workflow_dispatch:
+    inputs:
+      bump:
+        description: 'Version Bump'
+        type: choice
+        options: [ patch, minor, major ]
+        default: 'patch'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          token: ${{ secrets.PAT }}
+
+      - name: Run Lite Release
+        uses: Rollczi/lite-release@v0.0.4-alpha
+        with:
+          token: ${{ secrets.PAT }}
+          bump_type: ${{ github.event.inputs.bump }}
+
+          commit_release: 'Release {VERSION}'
+          commit_release_update_files: 'README.md, **/*.gradle.kts, **/ExamplePlugin.java, **/fabric.mod.json'
+
+          commit_snapshot: 'Snapshot {VERSION}'
+          commit_snapshot_update_files: 'buildSrc/src/main/kotlin/litecommands-publish.gradle.kts'
+
+          git_user_name: 'Rollczi'
+          git_user_email: 'Rollczi@users.noreply.github.com'
+
+          github_release_title: 'LiteCommands v{VERSION}'
+          github_release_template: '.github/release/template.md'

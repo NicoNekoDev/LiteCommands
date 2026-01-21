@@ -4,9 +4,9 @@ object Versions {
     const val JETBRAINS_ANNOTATIONS = "26.0.2-1"
 
     // Tests
-    const val JUNIT_JUPITER = "5.14.1"
+    const val JUNIT_JUPITER = "5.14.2"
     const val ASSERTJ = "3.27.6"
-    const val MOCKITO = "5.20.0"
+    const val MOCKITO = "5.21.0"
     const val AWAITILITY = "4.3.0"
 
     // Bukkit
@@ -18,13 +18,13 @@ object Versions {
     const val BUNGEECORD_API = "1.21-R0.4"
 
     // JDA
-    const val JDA = "6.1.1"
+    const val JDA = "6.3.0"
 
     // Minestom
     const val MINESTOM = "2025.10.05-1.21.8"
 
     // Sponge
-    const val SPONGE_API = "16.0.0"
+    const val SPONGE_API = "17.0.0"
 
     // Velocity
     const val VELOCITY_API = "3.4.0-SNAPSHOT"
@@ -40,7 +40,7 @@ object Versions {
     const val FABRIC_LIFECYCLE_EVENTS_V1 = "2.6.7+33df5e6e5d"
 
     // TelegramBots
-    const val TELEGRAM_BOTS = "9.2.0"
+    const val TELEGRAM_BOTS = "9.2.1"
 
     // ChatGPT
     const val GSON = "2.13.2"
@@ -48,8 +48,8 @@ object Versions {
     const val OKHTTP = "5.3.2"
 
     // Adventure
-    const val ADVENTURE_MINIMESSAGES = "4.25.0"
-    const val ADVENTURE_TEXT_SERIALIZER_LEGACY = "4.25.0"
+    const val ADVENTURE_MINIMESSAGES = "4.26.1"
+    const val ADVENTURE_TEXT_SERIALIZER_LEGACY = "4.26.1"
     const val ADVENTURE_PLATFORM_API = "4.4.1"
 
     // Jakarta
